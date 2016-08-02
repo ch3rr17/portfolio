@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Mortgage Calculator</h1>
+    <label>Loan Balance </label>
+    <input type="text" class="form-control" name="" ng-model="mort.loan">
+    <label>Interest </label>
+    <input type="text" class="form-control" name="" ng-model="mort.interest">
+    <label>Loan Term (years) </label>
+    <input type="text" class="form-control" name="" ng-model="mort.term">
+    <div class="form-group">
+        <label for="priority">Period</label>
+        <select class="form-control input-sm" ng-model="mort.period">
+            <option value=12>Monthly</option>
+            <option value=6>Bi-Monthly</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" ng-click="mort.calc()">Calculate</button>
+    <h3 class="mort-result" ng-show="mort.result">Your payment is: $ {{mort.monthlyPayment}}</h3>
+</div>

@@ -1,0 +1,122 @@
+body {
+    background-image: url(/images/desk.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.jumbotron {
+    background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-color: transparent;
+    margin-top: 50px;
+}
+
+.container {
+    position: relative;
+}
+
+.proj-container {
+    margin: 0 auto;
+    width: 1080px;
+}
+.table>tbody>tr>td{
+    background-color: #000;
+}
+
+
+.row{
+	/*background-color: #111106;*/
+	opacity: 0.8;
+	padding: 10px;
+}
+
+.mort-result {
+	background-color: #111106;
+	opacity: 0.8;
+	padding: 10px;
+}
+
+.content {
+	background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-color: transparent;
+    padding: 10px;
+}
+
+/*NAVBAR CSS */
+
+.navbar,
+.navbar-inverse {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    min-height: 80px;
+}
+
+.nav li {
+    display: inline;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: #444444;
+    transition: 0.7s all linear;
+    height: 100%;
+}
+
+/*PANEL CSS*/
+
+.panel{
+    background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-color: transparent;
+}
+
+.lead {
+    color: #fff;
+    font-size: 12pt;
+}
+
+.panel-footer {
+    background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-top: 1px solid #903030;
+    /*IPA Color*/
+}
+
+.panel>.panel-heading {
+    background-color: #000;
+    border-bottom: 1px solid #903030;
+    /*IPA Color*/
+}
+
+.fa>.fa-star {
+    color: #fff;
+}
+
+
+
+
+/*Pagination background-color */
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #903030;
+}
