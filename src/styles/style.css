@@ -1,3 +1,5 @@
+/*MAIN BODY*/
+
 body {
     background-image: url(/images/desk.jpg);
     background-attachment: fixed;
@@ -5,46 +7,10 @@ body {
     color: #fff;
 }
 
-.jumbotron {
-    background-color: #111106;
-    opacity: 0.8;
-    color: #fff;
-    border-color: transparent;
-    margin-top: 50px;
-}
-
 .container {
     position: relative;
 }
 
-.proj-container {
-    margin: 0 auto;
-    width: 1080px;
-}
-.table>tbody>tr>td{
-    background-color: #000;
-}
-
-
-.row{
-	/*background-color: #111106;*/
-	opacity: 0.8;
-	padding: 10px;
-}
-
-.mort-result {
-	background-color: #111106;
-	opacity: 0.8;
-	padding: 10px;
-}
-
-.content {
-	background-color: #111106;
-    opacity: 0.8;
-    color: #fff;
-    border-color: transparent;
-    padding: 10px;
-}
 
 /*NAVBAR CSS */
 
@@ -75,39 +41,29 @@ body {
     height: 100%;
 }
 
+
 /*PANEL CSS*/
 
-.panel{
+.panel {
     background-color: #111106;
     opacity: 0.8;
     color: #fff;
     border-color: transparent;
 }
 
-.lead {
+/*.lead {
     color: #fff;
     font-size: 12pt;
-}
+}*/
 
-.panel-footer {
-    background-color: #111106;
-    opacity: 0.8;
-    color: #fff;
-    border-top: 1px solid #903030;
-    /*IPA Color*/
-}
 
 .panel>.panel-heading {
-    background-color: #000;
-    border-bottom: 1px solid #903030;
-    /*IPA Color*/
+    border-bottom: 1px solid #fff;
 }
 
 .fa>.fa-star {
     color: #fff;
 }
-
-
 
 
 /*Pagination background-color */
@@ -119,4 +75,99 @@ body {
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
     background-color: #903030;
+}
+
+
+/*MAIN PAGE CSS*/
+
+.jumbotron {
+    background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-color: transparent;
+    margin-top: 50px;
+    width: 55em;
+}
+
+@media screen and (min-width: 880px) .container .jumbotron,
+.container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+
+/*@media only {
+    .jumbotron {
+        width: 880px;
+    }
+}*/
+
+.nameTag {
+    white-space: nowrap;
+    text-indent: 130px;
+    font-size: 10pt;
+}
+
+.profTag {
+    white-space: nowrap;
+    text-indent: 64px;
+    font-size: 10pt;
+}
+
+.profile-container {
+    width: 100px;
+    height: 150px;
+    border: 4px solid #fff;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    top: -245px;
+    left: 40px;
+}
+
+.content {
+    /*background-color: #111106;
+    opacity: 0.8;
+    color: #fff;
+    border-color: transparent;
+    padding: 10px;*/
+    position: inherit;
+    z-index: 1;
+    top: -150px;
+    width: 100%;
+}
+
+
+/* PROJECT CONTAINER PAGE */
+
+.menu-list {
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 1080px;
+}
+
+
+/*TO DO PAGE CSS*/
+
+.table>tbody>tr>td {
+    background-color: #000;
+}
+
+.todoText {
+    color: #000;
+}
+
+.row {
+    /*background-color: #111106;*/
+    opacity: 0.8;
+    padding: 10px;
+}
+
+
+/* MORTGAGE PAGE CSS */
+
+.mort-result {
+    background-color: #111106;
+    opacity: 0.8;
+    padding: 10px;
 }

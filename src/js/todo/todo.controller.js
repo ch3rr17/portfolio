@@ -5,44 +5,33 @@
         .module('app')
         .controller('ToDoController', ToDoController);
 
-    ToDoController.$inject = [];
+    ToDoController.$inject = ['$filter'];
 
     /* @ngInject */
-    function ToDoController() {
+    function ToDoController($filter) {
         var vm = this;
         vm.title = 'ToDoController';
 
+        //Holds current list of ToDos
         vm.items = [];
-        //vm.newItem = '';
-        
 
-        vm.addItem = function(){
-        	vm.items.push({
-        		'text': vm.newItem,
-        		'priority': vm.itemColor
-        	});
-
-        	
-        	console.log(vm.items);
-            console.log(vm.newItem);
+        //Adds a new item to the list
+        vm.toDoAdd = function() {
+            vm.items.push({
+                'text': vm.addItem,
+                'priority': vm.itemColor
+            });
+            vm.addItem = '';
         };
 
-       
-
-        vm.delete = function(index){
-        	vm.items.splice(index,1);
+        //Deletes an item
+        vm.delete = function(index) {
+            vm.items.splice(index, 1);
         };
 
-        vm.predicate = 'text';
-        vm.reverse = true;
-
-        vm.setOrder = function(predicate){
-        	vm.reverse = (vm.predicate === predicate) ? !vm.reverse : false;
-        	vm.predicate = predicate;
-        };
-
-        vm.sortItems = function(order){
-        	vm.items = $filter('orderBy')(vm.items,order);
+        //Sort Items
+        vm.sortItems = function(order) {
+            vm.items = $filter('orderBy')(vm.items, order);
         };
     }
 })();
