@@ -12,8 +12,11 @@
         var vm = this;
         vm.title = 'WeatherController';
 
+        //Holds the city search entered by user
         vm.search = [];
 
+        //Grabs current info entered by the user then reaches out to the Weather Factory
+        //which provides the information back to the Weather Controller
         vm.getWeather = function(cityName) {
             WeatherFactory.weatherSearch(cityName)
                 .then(

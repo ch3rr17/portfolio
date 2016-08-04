@@ -1,9 +1,14 @@
-<div class="proj-container">
-    <div class="menu-list">
-        <a class="btn btn-primary" type="button" ui-sref="projects.mortgagecalc">Mortgage Estimator</a>
-        <a class="btn btn-primary" type="button" ui-sref="projects.changecalc">Customer Change Calculator</a>
-        <a class="btn btn-primary" type="button" ui-sref="projects.weather">Check the Weather!</a>
-        <a class="btn btn-primary" type="button" ui-sref="projects.todo">To Do List</a>
+<!--PAGE WHICH CONTAINS THE MENU FOR EACH PROJECT STATE -->
+<div class="container">
+    <button type="button" class="btn btn-primary" style="left: 140px; margin-top:20px;" ng-click="showProjectList=!showProjectList">Show/Hide Project List</button>
+    <div class="menu-list" ng-show="showProjectList">
+        <p style="background-color: #000; padding: 10px;">These projects below allows you to calculate your monthly or bi-monthly mortgage, calculates customer's change per sale, check the current weather where data is grabbed from the Open Weather API, and create your own To Do List. For more detailed projects, please visit my GitHub page at: <a href="https://github.com/ch3rr17">Github Page.</a></p>
+        <ul class="nav nav-pills">
+            <li class="menuBg" role="presentation"><a ui-sref="projects.mortgagecalc">Mortgage Estimator</a></li>
+            <li class="menuBg" role="presentation"><a ui-sref="projects.changecalc">Customer Change Calculator</a></li>
+            <li class="menuBg" role="presentation"><a ui-sref="projects.weather">Check the Weather!</a></li>
+            <li class="menuBg" role="presentation"><a ui-sref="projects.todo">To Do List</a></li>
+        </ul>
     </div>
     <div ui-view></div>
 </div>

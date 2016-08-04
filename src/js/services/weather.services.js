@@ -16,6 +16,9 @@
 
         ////////////////
 
+        //Grabs entered info from the Weather Controller then this function
+        //talks to the Open Weather API based on the API url and its params.
+        //This then will provide the information back to the Weather Controller
         function weatherSearch(city) {
             var defer = $q.defer();
             var url = 'http://api.openweathermap.org/data/2.5/weather';
