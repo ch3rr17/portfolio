@@ -6,7 +6,7 @@
             'ui.router',
             'toastr'
         ])
-        .config(function($stateProvider, $urlRouterProvider, $httpProvider, $cookies) {
+        .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
             $urlRouterProvider.otherwise('main');
 
