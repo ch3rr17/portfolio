@@ -6,13 +6,9 @@
             'ui.router',
             'toastr'
         ])
-        .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
-
+        .config(function($stateProvider, $urlRouterProvider, $httpProvider, $cookies) {
 
             $urlRouterProvider.otherwise('main');
-            $httpProvider.defaults.useXDomain = true;
-
-            delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
             //Create state for each page
             $stateProvider.state('main', { url: '/main', templateUrl: 'src/templates/main.html', controller: 'MainController as main' })
