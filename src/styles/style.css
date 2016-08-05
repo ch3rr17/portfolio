@@ -19,6 +19,11 @@ p {
     font-size: 12pt;
 }
 
+.output{
+    color: green;
+    font-weight: bold;
+}
+
 
 /***************************
 NAVBAR CSS

@@ -35,41 +35,41 @@
                     <div class="row">
                         <div class="col-md-4">
                             <p class="lead"><strong>{{weather.weather.name}}</strong></p>
-                        </div>
-                        <div class="col-md-4">
-                            <img ng-src="src/images/{{weather.weather.weather[0].icon}}.png">
+                            <p class="output"><img width="50" height="50" ng-src="src/images/{{weather.weather.weather[0].icon}}.png">{{weather.weather.main.temp}} (F)</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">Lat/Long: {{weather.weather.coord.lat}}{{weather.weather.coord.lon}}</div>
+                        <button type="button" class="btn btn-primary btn-xs" style="margin-left: 10px;" ng-click="moreInfo=!moreInfo">More info</button>
                     </div>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p>Temp:</p>
-                            <p class="output">{{weather.weather.main.temp}}(F)</p>
+                    <div class="infoContainer" ng-show="moreInfo">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Lat/Long:</p>
+                                <p class="output">{{weather.weather.coord.lat}}{{weather.weather.coord.lon}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Pressure:</p>
+                                <p class="output">{{weather.weather.main.pressure}}</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Humidity:</p>
+                                <p class="output">{{weather.weather.main.humidity}}%</p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <p>Pressure:</p>
-                            <p class="output">{{weather.weather.main.pressure}}</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p>Humidity:</p>
-                            <p class="output">{{weather.weather.main.humidity}}%</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p>Lowest Temp:</p>
-                            <p class="output">{{weather.weather.main.temp_min}}(F)</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p>Highest Temp:</p>
-                            <p class="output">{{weather.weather.main.temp_max}}(F)</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p>Wind Speed:</p>
-                            <p class="output">{{weather.weather.wind.speed}}mph</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Lowest Temp:</p>
+                                <p class="output">{{weather.weather.main.temp_min}}(F)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Highest Temp:</p>
+                                <p class="output">{{weather.weather.main.temp_max}}(F)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Wind Speed:</p>
+                                <p class="output">{{weather.weather.wind.speed}}mph</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -14,6 +14,7 @@
 
         //Holds the city search entered by user
         vm.search = [];
+        vm.moreInfo = false;
 
         //Grabs current info entered by the user then reaches out to the Weather Factory
         //which provides the information back to the Weather Controller
