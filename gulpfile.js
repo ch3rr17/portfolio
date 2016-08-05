@@ -20,7 +20,7 @@ gulp.task('default', ['hello']);
 
 gulp.task('connect', function() {
    connect.server({
-       root: './src',
+       root: '.',
        livereload: true
    })
 });
@@ -30,7 +30,7 @@ gulp.task('src', function(){
        uri: 'http://localhost:8080',
        src: 'Google Chrome'
    };
-   gulp.src('./src/index.html')
+   gulp.src('./index.html')
        .pipe(open(options));
 });
 
@@ -44,10 +44,10 @@ gulp.task('watch', function() {
 
 gulp.task('injectables', function() {
    var sources = gulp.src(paths, {read: false});
-   return gulp.src('./src/index.html')
+   return gulp.src('index.html')
        .pipe(wiredep())
        .pipe(inject(sources, { relative: true }))
-       .pipe(gulp.dest('./src'));
+       .pipe(gulp.dest('.'));
 });
 
 gulp.task('js', function() {
