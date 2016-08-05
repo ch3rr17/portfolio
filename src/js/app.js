@@ -7,10 +7,12 @@
             'toastr'
         ])
         .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
-            
-            
+
+
             $urlRouterProvider.otherwise('main');
-            $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+            $httpProvider.defaults.useXDomain = true;
+
+            delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
             //Create state for each page
             $stateProvider.state('main', { url: '/main', templateUrl: 'src/templates/main.html', controller: 'MainController as main' })
@@ -19,7 +21,7 @@
                 .state('projects.changecalc', { url: '/changecalc', templateUrl: 'src/templates/changecalc.html', controller: 'ChangeController as change' })
                 .state('projects.weather', { url: '/weather', templateUrl: 'src/templates/weather.html', controller: 'WeatherController as weather' })
                 .state('projects.todo', { url: '/todos', templateUrl: 'src/templates/todo.html', controller: 'ToDoController as todo' })
-                
+
         })
 
 })();
