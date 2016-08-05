@@ -7,7 +7,10 @@
             'toastr'
         ])
         .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+            
+            
             $urlRouterProvider.otherwise('main');
+            $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
             //Create state for each page
             $stateProvider.state('main', { url: '/main', templateUrl: 'src/templates/main.html', controller: 'MainController as main' })
