@@ -3,7 +3,7 @@ MAIN BODY
 ****************************/
 
 body {
-    background-image: url(/images/desk2.jpg);
+    background-image: url(../images/desk2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
