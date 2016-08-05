@@ -16,7 +16,7 @@
                 .state('projects.changecalc', { url: '/changecalc', templateUrl: 'src/templates/changecalc.html', controller: 'ChangeController as change' })
                 .state('projects.weather', { url: '/weather', templateUrl: 'src/templates/weather.html', controller: 'WeatherController as weather' })
                 .state('projects.todo', { url: '/todos', templateUrl: 'src/templates/todo.html', controller: 'ToDoController as todo' })
-                .state('projects.movie', { url: '/movies', templateUrl: 'src/templates/movies.html', controller: 'MovieFinderController as movie' })
+                
         })
 
 })();
