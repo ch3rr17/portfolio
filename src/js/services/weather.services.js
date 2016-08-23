@@ -22,12 +22,13 @@
         function weatherSearch(city) {
             var defer = $q.defer();
             var url = 'http://api.openweathermap.org/data/2.5/weather';
+            console.log(url);
             $http({
                 method: 'GET',
                 url: url,
                 params: {
                     q: city,
-                    mode: 'json',
+                    mode: 'jsonp',
                     units: 'imperial',
                     appid: '449e9e8cb9237caf839de0f795054053'
                 }
