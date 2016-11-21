@@ -16,6 +16,7 @@
         vm.search = [];
         vm.moreInfo = false;
 
+
         //Grabs current info entered by the user then reaches out to the Weather Factory
         //which provides the information back to the Weather Controller
         vm.getWeather = function(cityName) {
@@ -24,8 +25,13 @@
                     function(response) {
                         vm.weather = response.data;
                         vm.city = {name: cityName};
-                        vm.city.time = moment().format('YYYY-MM-DD h:mm:ss a');
-                        vm.search.push(vm.city);
+                        vm.city.time = moment().format('M/D/YY @ h:mm a');
+                        vm.search.push({
+                            'cityName': vm.city.name,
+                            'time': vm.city.time
+                        });
+                        console.log(vm.search);
+                        vm.city.name = '';
                     },
                     function(error) {
                         $log.error('failure getting weather', error);

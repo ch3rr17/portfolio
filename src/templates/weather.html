@@ -81,10 +81,16 @@
                     <h3 class="panel-title">Search History</h3>
                 </div>
                 <div class="panel-body">
-                    <table class="table table-striped">
+                    <table class="table table-hover table-inverse">
+                        <thead >
+                            <tr>
+                                <th>CITY</th>
+                                <th>SEARCH TIME</th>
+                            </tr>
+                        </thead>
                         <tbody>
-                            <tr class="row" ng-repeat="search in weather.search">
-                                <td>{{search.name}}</td>
+                            <tr ng-repeat="search in weather.search">
+                                <td>{{search.cityName}}</td>
                                 <td>{{search.time}}</td>
                             </tr>
                         </tbody>

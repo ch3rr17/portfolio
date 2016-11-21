@@ -22,7 +22,6 @@
         function weatherSearch(city) {
             var defer = $q.defer();
             var url = 'http://api.openweathermap.org/data/2.5/weather';
-            console.log(url);
             $http({
                 method: 'GET',
                 url: url,
