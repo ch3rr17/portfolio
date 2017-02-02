@@ -8,7 +8,7 @@
         ])
         .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
-            $urlRouterProvider.otherwise('main');
+            $urlRouterProvider.otherwise('/main');
 
             //Create state for each page
             $stateProvider.state('main', { url: '/main', templateUrl: 'src/templates/main.html', controller: 'MainController as main' })

@@ -30,7 +30,6 @@
                             'cityName': vm.city.name,
                             'time': vm.city.time
                         });
-                        console.log(vm.search);
                         vm.city.name = '';
                     },
                     function(error) {

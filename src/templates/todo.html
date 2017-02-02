@@ -32,16 +32,16 @@
             <!-- end of 1st col -->
             <div class="col-md-6">
                 <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-primary" ng-click="todo.sortItems('-priority')">Order by highest priority</button>
-                    <button type="button" class="btn btn-primary" ng-click="todo.sortItems('priority')">Order by lower priority</button>
-                    <button type="button" class="btn btn-primary" ng-click="todo.sortItems('text')">Order alphabetically</button>
+                    <button type="button" class="btn" ng-click="todo.sortItems('-priority')">Order by highest priority</button>
+                    <button type="button" class="btn" ng-click="todo.sortItems('priority')">Order by lower priority</button>
+                    <button type="button" class="btn" ng-click="todo.sortItems('text')">Order alphabetically</button>
                 </div>
                 <!-- OUTPUT RESULTS HERE -->
                 <table>
                     <tbody ng-repeat="item in todo.items | orderBy:todo.text:reverse">
                         <tr>
                             <td class="col-md-6" ng-class="{'bg-info':{{item.priority}} === 1, 'bg-warning':{{item.priority}} === 2, 'bg-danger':{{item.priority}} === 3}"> <strong class="todoText">{{item.text}}</strong>
-                                <button type="button" class="btn btn-danger" ng-class="{'bg-info':{{item.priority}} === 1, 'bg-warning':{{item.priority}} === 2, 'bg-danger':{{item.priority}} === 3}" ng-click="todo.delete($index)">(Delete Item)</button>
+                                <button type="button" class="btn btn-danger btn-xs" ng-class="{'bg-info':{{item.priority}} === 1, 'bg-warning':{{item.priority}} === 2, 'bg-danger':{{item.priority}} === 3}" ng-click="todo.delete($index)">(Delete Item)</button>
                             </td>
                         </tr>
                     </tbody>

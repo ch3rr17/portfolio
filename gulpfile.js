@@ -30,7 +30,7 @@ gulp.task('src', function(){
        uri: 'http://localhost:8080',
        src: 'Google Chrome'
    };
-   gulp.src('./src/index.html')
+   gulp.src('./index.html')
        .pipe(open(options));
 });
 

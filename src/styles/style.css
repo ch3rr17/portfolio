@@ -17,6 +17,7 @@ body {
 
 p {
     font-size: 12pt;
+    color: #fff;
 }
 
 .output{
@@ -35,7 +36,7 @@ NAVBAR CSS
     border: none;
     margin-bottom: 0;
     min-height: 50px;
-    background: #009ACD;
+    background: #336699;
     border-bottom: 1px solid #fff;
 }
 
@@ -65,13 +66,13 @@ PANEL CSS
 
 .panel {
     background-color: #111106;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
     color: #fff;
     border-color: transparent;
 }
 
 .panel-primary> .panel-heading {
-    background: #66CCCC;
+    background: #821207;
     border-bottom: 1px solid #fff;
 }
 
@@ -115,6 +116,11 @@ MAIN PAGE CSS
 .profTag {
     white-space: nowrap;
     text-indent: 60px;
+    cursor: pointer;
+}
+
+a:hover, .profTag:hover {
+    font-size: 14pt;
 }
 
 .profile-container {
@@ -155,10 +161,25 @@ a:hover {
 }
 
 .menuBg {
-    background-color: #2F4F4F;
+    background-color: #821207;
     border-radius: 6px;
     margin-top: 30px;
 }
+
+.btn{
+    color: #fff;
+    background-color: #821207;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn:hover{
+    
+    background-color: #fff;
+    color: #821207;
+}
+
+
 
 
 /***************************

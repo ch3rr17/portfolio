@@ -1,14 +1,15 @@
+<!-- 121042882 -->
 <div class="container">
     <div class="jumbotron">
         <p>Always know if you need an umbrella!</p>
     </div>
     <!-- Cities Button Group -->
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary" ng-click="weather.getWeather('San Diego')">San Diego</button>
-        <button type="button" class="btn btn-primary" ng-click="weather.getWeather('San Francisco')">San Francisco</button>
-        <button type="button" class="btn btn-primary" ng-click="weather.getWeather('New York')">New York</button>
-        <button type="button" class="btn btn-primary" ng-click="weather.getWeather('Washington DC')">Washington DC</button>
-        <button type="button" class="btn btn-primary" ng-click="weather.getWeather('London')">London</button>
+        <button type="button" class="btn " ng-click="weather.getWeather('San Diego')">San Diego</button>
+        <button type="button" class="btn" ng-click="weather.getWeather('San Francisco')">San Francisco</button>
+        <button type="button" class="btn" ng-click="weather.getWeather('New York')">New York</button>
+        <button type="button" class="btn" ng-click="weather.getWeather('Washington DC')">Washington DC</button>
+        <button type="button" class="btn" ng-click="weather.getWeather('London')">London</button>
         <button type="button" class="btn btn-primary" ng-click="weather.getWeather('Tokyo')">Tokyo</button>
     </div>
     <!-- end of btn group -->
@@ -18,7 +19,7 @@
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Enter city..." ng-model="weather.city.name">
                 <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit" ng-click="weather.getWeather(weather.city.name)">Go!</button>
+                        <button class="btn" type="submit" ng-click="weather.getWeather(weather.city.name)">Go!</button>
                     </span>
             </div>
         </form>

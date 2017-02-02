@@ -35,11 +35,11 @@
             .then(
             	function(response){
             		defer.resolve(response);
-            		toastr.success('We have weather');
+            		//toastr.success('We have weather');
             	},
             	function (error) {
             		defer.reject(err.data.message);
-            		toastr.warning(response.config.url);
+            		//toastr.warning(response.config.url);
             	}
 
             );//end of then
