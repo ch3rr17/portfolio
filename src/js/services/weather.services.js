@@ -21,7 +21,7 @@
         //This then will provide the information back to the Weather Controller
         function weatherSearch(city) {
             var defer = $q.defer();
-            var url = 'http://api.openweathermap.org/data/2.5/weather';
+            var url = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather';
             $http({
                 method: 'GET',
                 url: url,
