@@ -30,6 +30,9 @@
                     mode: 'jsonp',
                     units: 'imperial',
                     appid: '449e9e8cb9237caf839de0f795054053'
+                },
+                headers: {
+                  'Origin': 'x-requested-with'
                 }
             })
             .then(
