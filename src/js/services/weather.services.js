@@ -21,20 +21,21 @@
         //This then will provide the information back to the Weather Controller
         function weatherSearch(city) {
             var defer = $q.defer();
-            var url = 'https://cors.now.sh/http://api.openweathermap.org/data/2.5/weather';
+            var url = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather';
             $http({
                 method: 'GET',
                 url: url,
                 params: {
                     q: city,
-                    mode: 'jsonp',
                     units: 'imperial',
                     appid: '449e9e8cb9237caf839de0f795054053'
                 }
             })
             .then(
             	function(response){
-            		defer.resolve(response);
+                defer.resolve(response);
+                console.log('hello world');
+                console.log(response);
             		//toastr.success('We have weather');
             	},
             	function (error) {
