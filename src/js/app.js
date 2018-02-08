@@ -21,30 +21,34 @@
                     templateUrl: 'src/templates/projects.html',
                     controller: 'ProjectController as project'
                 })
-                .state('projects.mortgagecalc', {
+                .state('mortgagecalc', {
                     url: '/mortcalc',
                     templateUrl: 'src/templates/mortcalc.html',
                     controller: 'MortgageController as mort'
                 })
-                .state('projects.changecalc', {
+                .state('changecalc', {
                     url: '/changecalc',
                     templateUrl: 'src/templates/changecalc.html',
                     controller: 'ChangeController as change'
                 })
-                .state('projects.weather', {
+                .state('weather', {
                     url: '/weather',
                     templateUrl: 'src/templates/weather.html',
                     controller: 'WeatherController as weather'
                 })
-                .state('projects.todo', {
+                .state('todo', {
                     url: '/todos',
                     templateUrl: 'src/templates/todo.html',
                     controller: 'ToDoController as todo'
                 })
-                .state('projects.belch', {
+                .state('belch', {
                     url: '/belch',
                     templateUrl: 'src/templates/belch.html'
                 })
+                .state('mood', {
+                  url: '/mood',
+                  templateUrl: 'src/templates/mood.html'
+              })
 
         })
 

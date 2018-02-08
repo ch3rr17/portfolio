@@ -12,6 +12,6 @@
         var vm = this;
         vm.title = 'ProjectController';
 
-        // vm.showProjectList = false;
+        vm.showProjectList = false;
     }
 })();

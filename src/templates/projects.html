@@ -1,15 +1,45 @@
 <!--PAGE WHICH CONTAINS THE MENU FOR EACH PROJECT STATE -->
-<div class="container">
+<div class="container" style="margin-top: 100px">
     <!-- <button type="button" class="btn menuBg" style="left: 140px; margin-top:20px;" ng-click="showProjectList=!showProjectList">Show/Hide Project List</button> -->
     <div class="menu-list">
-        <p style="background-color: #000; padding: 10px; font-size: 10pt; margin-top: 30px;">These projects below allows you to calculate your monthly or bi-monthly mortgage, calculates customer's change per sale, and create your own To Do List. Some of the projects involved here which excites me most is developing applications using APIs. One of which can check the current weather where data is grabbed from the Open Weather API. For more detailed projects, please visit my GitHub page here: <a href="https://github.com/ch3rr17">GitHub Repos.</a></p>
-        <ul class="nav nav-pills">
-            <li class="menuBg" role="presentation"><a ui-sref="projects.mortgagecalc">Mortgage Estimator</a></li>
-            <li class="menuBg" role="presentation"><a ui-sref="projects.changecalc">Customer Change Calculator</a></li>
+        <div style="background-color: #000; padding: 10px; font-size: 10pt; margin-top: 30px;">
+          <p>These projects below allows you to calculate your monthly or bi-monthly mortgage, calculates customer's change per sale, create your own To Do List, check the weather, analyze your mood, and a preview of brewery finder in San Diego. 
+             Some of the projects involved here which excites me most is developing applications using Web APIs. One of which can check the current weather where data is grabbed from the Open Weather API, Spotify API, and Getty Images API. </p> 
+          <p>For more detailed projects, please visit my GitHub page here: <a href="https://github.com/ch3rr17">GitHub Repos</a> or visit by Bitbucket page here: <a href="https://bitbucket.org/ch3rr17/">Bitbucket Repos</a> (mostly private repos - please email me for detailed projects involved here)</p>
+        </div>
+        <div class="menu-list">
+          <ul class="nav nav-pills">
+            <li class="menuBg" role="presentation">
+              <a target="_new" ui-sref="mortgagecalc"><img class="img-menu" src="src/images/morg_calc.png"  alt=""></a>
+              Mortgage Estimator
+            </li>
+            <li class="menuBg" role="presentation">
+              <a target="_new" ui-sref="changecalc"><img class="img-menu" src="src/images/change_calc.png"  alt=""></a>
+              Change Calculator
+            </li>
+            <li class="menuBg" role="presentation">
+              <a target="_new" ui-sref="todo"><img class="img-menu" src="src/images/todo.png" alt=""></a>
+              ToDo List
+            </li>
+            <li class="menuBg" role="presentation">
+                <a target="_new" ui-sref="weather"><img class="img-menu" src="src/images/weather.png" alt=""></a>
+                Check the Weather
+              </li>
+            <li class="menuBg" role="presentation">
+              <a target="_new" ui-sref="belch"><img class="img-menu" src="src/images/belch.png"  alt=""></a>
+              Brewery Finder
+            </li>
+            <li class="menuBg" role="presentation">
+              <a target="_new" ui-sref="mood"><img class="img-menu" src="src/images/mood2.png" alt=""></a>
+              Mood Music Analyzer
+            </li>
+            <!-- <li class="menuBg" role="presentation"><a ui-sref="projects.changecalc">Customer Change Calculator</a></li>
             <li class="menuBg" role="presentation"><a ui-sref="projects.todo">To Do List</a></li>
             <li class="menuBg" role="presentation"><a ui-sref="projects.weather">Check the Weather!</a></li>
             <li class="menuBg" role="presentation"><a ui-sref="projects.belch">Brewery Finder</a></li>
+            <li class="menuBg" role="presentation"><a target="_new" href="https://cb-moodmusicanalyzer.herokuapp.com/">Mood Music Analyzer</a></li> -->
         </ul>
+        </div>
     </div>
-    <div ui-view></div>
 </div>
+<!-- <div ui-view></div> -->
