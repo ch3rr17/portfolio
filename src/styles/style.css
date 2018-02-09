@@ -2,13 +2,18 @@
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { 
   .img-menu {
-    width: 300px !important;
-    height: 200px !important;
+    width: 240px !important;
+    height: 250px !important;
   }
 
   .creation-img {
     padding: 5px;
     width: 300px !important;
+    height: 300px !important;
+  }
+
+  .menuBg {
+    width: 280px !important;
     height: 300px !important;
   }
 }
