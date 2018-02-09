@@ -49,6 +49,10 @@
                   url: '/mood',
                   templateUrl: 'src/templates/mood.html'
               })
+              .state('creations', {
+                url: '/creations',
+                templateUrl: 'src/templates/creations.html'
+            })
 
         })
 
