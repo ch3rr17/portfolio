@@ -1,15 +1,17 @@
 @media only screen 
-and (min-device-width : 375px) 
+and (min-device-width : 320px) 
 and (max-device-width : 667px) { 
   .img-menu {
-    width: 240px !important;
-    height: 250px !important;
+    /* width: 240px !important;
+    height: 250px !important; */
+    height: auto !important;
+    margin-top: 40px;
   }
 
   .creation-img {
-    padding: 5px;
+    padding: 30px;
     width: 300px !important;
-    height: 300px !important;
+    height:auto !important;
   }
 
   .menuBg {
@@ -283,4 +285,51 @@ CREATION PAGE  CSS
 
 .creation-img {
   padding: 5px;
+}
+
+.imageslide{
+	/* width:600px; */
+	height:400px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	overflow:hidden;
+	position:relative;
+	text-align: center;
+}
+
+.imageslide .slider-content {
+  position: absolute;
+  width:100%;
+  height:400px;
+  margin: 0 auto;
+}
+
+.photo-img {
+  border: 4px solid #fff;
+  border-radius: 4px;
+  margin: 0 auto !important;
+}
+
+.animate-enter,.animate-leave {
+	-webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-o-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+}
+
+.animate-enter {
+	left:100%;
+}
+
+.animate-enter.animate-enter-active {
+	left:0;
+}
+
+.animate-leave {
+	left:0;
+}
+
+.animate-leave.animate-leave-active {
+	margin-left:-100%;
 }

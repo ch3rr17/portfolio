@@ -1,22 +1,59 @@
-<div class="container" style="margin-top: 150px">
-    <h1>Some Photoshop Projects</h1>
-    <div class="row" style="background-color: #000; padding: 10px">
-        <div class="col-md-6">
-          <img class="creation-img" src="src/images/wedding_invitation.jpg" alt="" width="500px" height="800px">
-        </div>
-        <div class="col-md-6">
-            <img class="creation-img" src="src/images/save_the_date.jpg" alt="" width="500px" height="300px">  
-            <img class="creation-img" src="src/images/bsmaid_invite.jpg" alt="" width="500px" height="300px">
-        </div>
-   
+<style>
+  p {
+    color: #fff !important;
+  }
+</style>
+<div class="container" style="margin-top: 100px">
+  <div class="fixed-header">
+    <h3><a ng-click="scrollTo('photo')">Photography</a> | <a ng-click="scrollTo('vid')">Video</a> </h3>
+  </div>
+
+  <div class="row" style="background-color: #000; padding: 10px; margin: 10px">
+    <h3>Photoshop Projects</h3>
+    <div class="col-md-6">
+      <img class="creation-img" src="src/images/wedding_invitation.jpg" alt="" width="500px" height="800px">
     </div>
-    <h1>Media/Video Production Project</h1>
-    <div class="row" style="background-color: #000; padding: 10px">
-      <div class="row">
-        <center> 
-          <h3>CSUSM Health Center Video: Co-Director/Producer Fall 2012</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pzV2XeHBqHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </center>
+    <div class="col-md-6">
+      <img class="creation-img" src="src/images/save_the_date.jpg" alt="" width="500px" height="auto !important">
+      <img class="creation-img" src="src/images/bsmaid_invite.jpg" alt="" width="500px" height="300px">
+    </div>
+  </div>
+
+
+  <div class="row" style="background-color: #000; padding: 10px; margin: 10px">
+    <h3 id="photo">Photography</h3>
+    <div class="imageslide" ng-switch='slideshow' ng-animate="'animate'" style="margin: 0 auto">
+      <div class="slider-content" ng-switch-when="1">
+        <img class="photo-img" src="src/images/sb-reserve-whiskey-cold-brew.png" alt="" width="300px" height="auto" style="padding: 30px !important;">
+        <p>Whiskey Barrel Aged Guatemala (Starbucks Reserve) - Seattle, WA</p>
       </div>
-    </div>      
+      <div class="slider-content" ng-switch-when="2">
+        <img class="photo-img" src="src/images/ch-garden-seattle-1.jpg" alt="" width="300px" height="auto"
+          style="margin-top: 100px !important">
+          <p>Chihuly Garden - Seattle, WA</p>
+      </div>
+      <div class="slider-content" ng-switch-when="3">
+        <img class="photo-img" src="src/images/tp-sunset1.png" alt="" width="300px" height="auto" style="margin-top: 100px !important">
+        <p>Sunset at Torrey Pines - San Diego, CA</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row" style="background-color: #000; padding: 10px; margin: 10px">
+    <h3 id="vid">Media/Video Production Project</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 style="font-size: 13pt">CSUSM Health Center Video (Fall 2012): Co-Director/Producer</h3>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/pzV2XeHBqHo" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+        <h3 style="font-size: 13pt">Grandma's 90th Birthday (2015): Producer</h3>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/rrpqVnDHmC4" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 </div>
