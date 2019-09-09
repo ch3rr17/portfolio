@@ -135,6 +135,19 @@ body {
   }
 }
 
+@-webkit-keyframes rippleEffect{
+  to{
+  opacity:1;
+  height:100%;
+  width:100%;
+  left:-30%;
+  top:-50%;
+  border-radius:100%;
+  background:rgba(200,200,200,0.1);
+  filter:brightness(150%);
+  }
+}
+
 
 
 @media screen and (max-width: 31.5em) {
