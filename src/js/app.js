@@ -63,6 +63,11 @@
           templateUrl: 'src/templates/dingnow.html'
         })
 
+        .state('pokemon', {
+          url: '/pokemon',
+          templateUrl: 'src/templates/pokemon.html',
+        })
+
     })
 
 })();
